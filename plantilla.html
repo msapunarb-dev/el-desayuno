@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El Desayuno | {{FECHA_CORTA}}</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --papel:#f7f2e8; --tinta:#1a1a1a; --gris:#5c5650; --linea:#1a1a1a; --acento:#9b1c1c; --caja:#efe7d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "Source Serif 4", Georgia, serif; }
+  .hoja { max-width:1180px; margin:0 auto; padding:24px 32px 64px; }
+  a { color:inherit; }
+  img { max-width:100%; display:block; }
+
+  /* Cabecera */
+  .cabecera { text-align:center; border-bottom:4px double var(--linea); padding-bottom:10px; }
+  .cabecera h1 { font:900 76px/1 "Playfair Display", Georgia, serif; margin:6px 0 10px; letter-spacing:-1px; }
+  .fecha { display:flex; justify-content:space-between; border-top:1px solid var(--linea); padding-top:6px;
+           font:500 13px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; }
+  nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea);
+        display:flex; justify-content:center; gap:28px; padding:8px 0; font:700 13px "Inter", sans-serif;
+        text-transform:uppercase; letter-spacing:.08em; }
+  nav a { text-decoration:none; }
+  nav a:hover { color:var(--acento); }
+
+  /* Titulos de seccion */
+  .seccion { margin-top:44px; scroll-margin-top:48px; }
+  .seccion > h2 { font:900 34px "Playfair Display", Georgia, serif; margin:0 0 18px; padding-bottom:6px;
+                  border-bottom:3px solid var(--linea); }
+
+  /* Portada */
+  .principal { display:grid; grid-template-columns:1.6fr 1fr; gap:28px; padding:24px 0;
+               border-bottom:1px solid var(--linea); }
+  .principal h3 { font:900 40px/1.1 "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .principal p { font-size:19px; }
+  .secundarias { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; padding:20px 0; }
+  .secundarias article + article { border-left:1px solid #cfc6b4; padding-left:24px; }
+  .secundarias img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .secundarias h3 { font:700 20px/1.2 "Playfair Display", Georgia, serif; margin:0 0 6px; }
+  .secundarias p { font-size:15.5px; margin:0; }
+  .ir { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; color:var(--acento);
+        text-decoration:none; display:inline-block; margin-top:8px; }
+
+  /* En seguimiento */
+  .seguimiento { background:var(--caja); border-top:3px solid var(--linea); padding:18px 22px; margin-top:8px; }
+  .seguimiento h2 { font:900 22px "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .fijos { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .fijo h4 { font:700 18px "Playfair Display", Georgia, serif; margin:0 0 4px; }
+  .fijo p { margin:4px 0; font-size:15.5px; }
+  .estado { font:700 11px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em;
+            padding:2px 7px; border:1px solid currentColor; }
+  .estado.mueve { color:var(--acento); }
+  .estado.quieto { color:var(--gris); }
+
+  /* Notas de seccion */
+  .notas { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .nota { scroll-margin-top:48px; }
+  .nota + .nota { border-left:1px solid #cfc6b4; padding-left:28px; }
+  .nota img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .volanta { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--acento); }
+  .nota h3 { font:700 23px/1.2 "Playfair Display", Georgia, serif; margin:4px 0 10px; }
+  .nota p { margin:0 0 9px; font-size:16px; }
+  .nota b { font-family:"Inter", sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; }
+  .fuente { font:500 13px "Inter", sans-serif; border-top:1px solid #cfc6b4; padding-top:8px; margin-top:10px; }
+  .fuente a { color:var(--acento); font-weight:700; }
+
+  @media (max-width:900px) {
+    .principal, .secundarias, .fijos, .notas { grid-template-columns:1fr; }
+    .secundarias article + article, .nota + .nota { border-left:0; padding-left:0; }
+    .cabecera h1 { font-size:52px; }
+  }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<header class="cabecera">
+  <h1>El Desayuno</h1>
+  <div class="fecha"><span>{{FECHA_LARGA}}</span><span>Edición N° {{NUMERO}}</span><span>{{MINUTOS}} min</span></div>
+</header>
+<nav>
+  <a href="#portada">Portada</a><a href="#economia">Economía</a><a href="#politica">Política</a><a href="#ia">IA</a><a href="#mineria">Minería</a>
+</nav>
+
+<!-- ============ PORTADA ============ -->
+<section id="portada">
+  <!-- Nota principal: la mas importante del dia. Enlaza a su nota completa en la seccion. -->
+  <article class="principal">
+    <img src="{{IMAGEN}}" alt="" onerror="this.remove()">
+    <div>
+      <span class="volanta">{{SECCION}}</span>
+      <h3>{{TITULAR}}</h3>
+      <p>{{DOS_O_TRES_LINEAS}}</p>
+      <a class="ir" href="#{{ID_NOTA}}">Seguir leyendo</a>
+    </div>
+  </article>
+
+  <!-- Las otras 4 de portada. Repetir el article 4 veces. -->
+  <div class="secundarias">
+    <article>
+      <img src="{{IMAGEN}}" alt="" onerror="this.remove()">
+      <span class="volanta">{{SECCION}}</span>
+      <h3>{{TITULAR}}</h3>
+      <p>{{DOS_LINEAS}}</p>
+      <a class="ir" href="#{{ID_NOTA}}">Seguir leyendo</a>
+    </article>
+  </div>
+
+  <!-- Temas fijos. Un div.fijo por tema de FIJOS.md. Estado: "mueve" (con link a su nota) o "quieto". -->
+  <div class="seguimiento">
+    <h2>En seguimiento</h2>
+    <div class="fijos">
+      <div class="fijo">
+        <h4>{{NOMBRE_FIJO}}</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> {{UNA_LINEA_DE_CONTEXTO}}</p>
+        <p><b>Hoy:</b> {{QUE_CAMBIO}}</p>
+        <a class="ir" href="#{{ID_NOTA}}">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>{{NOMBRE_FIJO}}</h4>
+        <span class="estado quieto">Sin cambios</span>
+        <p><b>Qué es:</b> {{UNA_LINEA_DE_CONTEXTO}}</p>
+        <p><b>Último hito:</b> {{FECHA_Y_HECHO}}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SECCIONES: economia, politica, ia, mineria. Misma estructura, 3 notas cada una. ============ -->
+<section class="seccion" id="economia">
+  <h2>Economía</h2>
+  <div class="notas">
+    <article class="nota" id="{{ID_NOTA}}">
+      <img src="{{IMAGEN}}" alt="" onerror="this.remove()">
+      <span class="volanta">{{CHILE_O_MUNDO_O_EN_SEGUIMIENTO}}</span>
+      <h3>{{TITULAR}}</h3>
+      <p><b>Qué pasó.</b> {{HECHOS_CON_CIFRAS}}</p>
+      <p><b>Impacto.</b> {{A_QUIEN_AFECTA_Y_CUANTO}}</p>
+      <p><b>Lectura.</b> {{POR_QUE_LO_HACEN_O_ESTRATEGIA}}</p>
+      <div class="fuente"><a href="{{LINK}}" target="_blank" rel="noopener">{{MEDIO}}</a></div>
+    </article>
+  </div>
+</section>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<!-- Correo corto. Gmail borra fotos externas y fondos: solo texto con estilos en linea. -->
+<div style="max-width:620px;margin:0 auto;color:#1a1a1a;font-family:Georgia,'Times New Roman',serif;font-size:17px;line-height:1.5;">
+  <div style="text-align:center;font-size:44px;font-weight:bold;letter-spacing:-1px;">El Desayuno</div>
+  <div style="text-align:center;font-family:Arial,sans-serif;font-size:12px;text-transform:uppercase;letter-spacing:1px;border-top:1px solid #1a1a1a;border-bottom:3px double #1a1a1a;padding:6px 0;margin:8px 0 18px;">{{FECHA_LARGA}} | Edición N° {{NUMERO}} | {{MINUTOS}} min</div>
+
+  <!-- Las 5 de portada, en el mismo orden. Repetir el bloque. -->
+  <div style="margin:0 0 16px;">
+    <div style="font-family:Arial,sans-serif;font-size:11px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;color:#9b1c1c;">{{SECCION}}</div>
+    <div style="font-size:20px;font-weight:bold;line-height:1.25;">{{TITULAR}}</div>
+    <div style="font-size:16px;">{{UNA_LINEA}}</div>
+  </div>
+
+  <!-- En seguimiento: una linea por tema -->
+  <div style="border-top:3px solid #1a1a1a;padding-top:10px;margin-top:6px;">
+    <div style="font-size:18px;font-weight:bold;margin-bottom:6px;">En seguimiento</div>
+    <div style="font-size:15px;margin-bottom:6px;"><b>{{NOMBRE_FIJO}}:</b> {{HOY_O_SIN_CAMBIOS}}</div>
+  </div>
+
+  <div style="text-align:center;margin:26px 0 10px;">
+    <a href="{{URL_EDICION}}" style="display:inline-block;border:2px solid #9b1c1c;color:#9b1c1c;font-family:Arial,sans-serif;font-size:15px;font-weight:bold;text-transform:uppercase;letter-spacing:1px;text-decoration:none;padding:14px 28px;">Leer el diario completo</a>
+  </div>
+</div>
