@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El Desayuno | jueves 19 de noviembre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --papel:#f7f2e8; --tinta:#1a1a1a; --gris:#5c5650; --linea:#1a1a1a; --acento:#9b1c1c; --caja:#efe7d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "Source Serif 4", Georgia, serif; }
+  .hoja { max-width:1180px; margin:0 auto; padding:24px 32px 64px; }
+  a { color:inherit; }
+  img { max-width:100%; display:block; }
+
+  /* Cabecera */
+  .cabecera { text-align:center; border-bottom:4px double var(--linea); padding-bottom:10px; }
+  .cabecera h1 { font:900 76px/1 "Playfair Display", Georgia, serif; margin:6px 0 10px; letter-spacing:-1px; }
+  .fecha { display:flex; justify-content:space-between; border-top:1px solid var(--linea); padding-top:6px;
+           font:500 13px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; }
+  nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea);
+        display:flex; justify-content:center; gap:28px; padding:8px 0; font:700 13px "Inter", sans-serif;
+        text-transform:uppercase; letter-spacing:.08em; }
+  nav a { text-decoration:none; }
+  nav a:hover { color:var(--acento); }
+
+  /* Titulos de seccion */
+  .seccion { margin-top:44px; scroll-margin-top:48px; }
+  .seccion > h2 { font:900 34px "Playfair Display", Georgia, serif; margin:0 0 18px; padding-bottom:6px;
+                  border-bottom:3px solid var(--linea); }
+
+  /* Portada */
+  .principal { display:grid; grid-template-columns:1.6fr 1fr; gap:28px; padding:24px 0;
+               border-bottom:1px solid var(--linea); }
+  .principal h3 { font:900 40px/1.1 "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .principal p { font-size:19px; }
+  .secundarias { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; padding:20px 0; }
+  .secundarias article + article { border-left:1px solid #cfc6b4; padding-left:24px; }
+  .secundarias img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .secundarias h3 { font:700 20px/1.2 "Playfair Display", Georgia, serif; margin:0 0 6px; }
+  .secundarias p { font-size:15.5px; margin:0; }
+  .ir { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; color:var(--acento);
+        text-decoration:none; display:inline-block; margin-top:8px; }
+
+  /* En seguimiento */
+  .seguimiento { background:var(--caja); border-top:3px solid var(--linea); padding:18px 22px; margin-top:8px; }
+  .seguimiento h2 { font:900 22px "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .fijos { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .fijo h4 { font:700 18px "Playfair Display", Georgia, serif; margin:0 0 4px; }
+  .fijo p { margin:4px 0; font-size:15.5px; }
+  .estado { font:700 11px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em;
+            padding:2px 7px; border:1px solid currentColor; }
+  .estado.mueve { color:var(--acento); }
+  .estado.quieto { color:var(--gris); }
+
+  /* Notas de seccion */
+  .notas { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .nota { scroll-margin-top:48px; }
+  .nota + .nota { border-left:1px solid #cfc6b4; padding-left:28px; }
+  .nota img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .volanta { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--acento); }
+  .nota h3 { font:700 23px/1.2 "Playfair Display", Georgia, serif; margin:4px 0 10px; }
+  .nota p { margin:0 0 9px; font-size:16px; }
+  .nota b { font-family:"Inter", sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; }
+  .fuente { font:500 13px "Inter", sans-serif; border-top:1px solid #cfc6b4; padding-top:8px; margin-top:10px; }
+  .fuente a { color:var(--acento); font-weight:700; }
+
+  @media (max-width:900px) {
+    .principal, .secundarias, .fijos, .notas { grid-template-columns:1fr; }
+    .secundarias article + article, .nota + .nota { border-left:0; padding-left:0; }
+    .cabecera h1 { font-size:52px; }
+  }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<header class="cabecera">
+  <h1>El Desayuno</h1>
+  <div class="fecha"><span>jueves 19 de noviembre de 2026</span><span>Edición N° 4</span><span>8 min</span></div>
+</header>
+<nav>
+  <a href="#portada">Portada</a><a href="#economia">Economía</a><a href="#politica">Política</a><a href="#ia">IA</a><a href="#mineria">Minería</a>
+</nav>
+
+<section id="portada">
+  <article class="principal">
+    <img src="https://www.latercera.com/resizer/v2/QONKJLYDCRCTJE6URV4427YCVM.jpg?auth=53a3fe38d317582291b7725d646800c9120fd3c85164b7697b5c3e242094e5cd&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+    <div>
+      <span class="volanta">Economía</span>
+      <h3>La economía cayó 1,1% en el tercer trimestre y la minería bajó 14,7%</h3>
+      <p>El PIB retrocedió 1,1% anual y la inversión cayó 6,7%. Para cerrar 2026 en positivo haría falta crecer 1,2% en el cuarto trimestre. Quiroz advierte nuevos Imacec negativos por la minería.</p>
+      <a class="ir" href="#pib">Seguir leyendo</a>
+    </div>
+  </article>
+  <div class="secundarias">
+    <article>
+      <img src="https://s.france24.com/media/display/6f9a6b5c-e3b6-11f1-bcdf-7908c4e1a3c7/w:1024/p:16x9/2026-11-18T220921Z-1302439892-RC2MQOAY75RO-RTRMADP-3-ANTHROPIC-IPO.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">IA</span>
+      <h3>Anthropic debutó en bolsa a US$83 y recaudó unos US$79.400 millones</h3>
+      <p>Es la mayor salida a bolsa de la historia, con valoración de US$1,5 billones.</p>
+      <a class="ir" href="#anthropic">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/Q7TUNO4DQZB2LG6IJXUSMYEULU.jpg?auth=2727c29956df7d6556cfe94afb0f12c914e74b7e847e55035721e189b776d778&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Política</span>
+      <h3>Rabat entregará a la Fiscalía los decretos de rebaja de condena</h3>
+      <p>El plazo vence el viernes y el voto del PDG pesa en la acusación.</p>
+      <a class="ir" href="#rabat">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/GMMZFGSEBRH4BH7UN73ZEZ6Z7Y.jpg?auth=eead9965046e21c5fa50ac9b71b2aa83f0c1365aa8e24f96e403ec9e4416810a&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Política</span>
+      <h3>Senado aprobó deuda pública de US$25.600 millones tras ceder Quiroz</h3>
+      <p>Fue 31 votos a 10; Hacienda cedió fondos para pensiones de alimentos.</p>
+      <a class="ir" href="#presupuesto">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/ECCLTIZPV5H2ZACMZVDTF5DUFE.jpg?auth=04f12f29eadf5138de880bd5d530599a0e47d75cc6bf942561807c9634bc60f7&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Economía</span>
+      <h3>Dólar tocó $1.007 y el cobre cayó a US$5,87</h3>
+      <p>Es el dólar más alto desde enero de 2025.</p>
+      <a class="ir" href="#dolar">Seguir leyendo</a>
+    </article>
+  </div>
+  <div class="seguimiento">
+    <h2>En seguimiento</h2>
+    <div class="fijos">
+      <div class="fijo">
+        <h4>Acusación constitucional contra Rabat</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Libelo de la oposición contra el ministro de Justicia por firmar decretos que rebajaron condenas a violadores y abusadores de menores.</p>
+        <p><b>Hoy:</b> Rabat entregará los decretos a la Fiscalía antes del viernes; Parisi dice que los dichos de Arenas podrían afectar la acusación.</p>
+        <a class="ir" href="#rabat">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>Dólar sobre $1.000</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> El peso se debilita por tasas altas en EE.UU. y cobre a la baja; sobre $1.000 suben importaciones y combustibles.</p>
+        <p><b>Hoy:</b> Subió a $1.007 el martes y el cobre cayó a US$5,87.</p>
+        <a class="ir" href="#dolar">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>Escándalo Nvidia</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Jensen Huang dejó Nvidia el 12-11 tras reportes de su relación con una exejecutiva de Megaspeed, cliente acusado de vínculos con la inteligencia china.</p>
+        <p><b>Hoy:</b> Colette Kress es CEO interina; sus inversiones en startups valen US$65.500 millones y se espera más cautela.</p>
+        <a class="ir" href="#nvidia">Seguir leyendo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="economia">
+  <h2>Economía</h2>
+  <div class="notas">
+    <article class="nota" id="pib">
+      <img src="https://www.latercera.com/resizer/v2/QONKJLYDCRCTJE6URV4427YCVM.jpg?auth=53a3fe38d317582291b7725d646800c9120fd3c85164b7697b5c3e242094e5cd&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>La economía cayó 1,1% en el tercer trimestre y la minería bajó 14,7%</h3>
+      <p><b>Qué pasó.</b> Según el Banco Central, el PIB retrocedió 1,1% anual y 1,8% frente al trimestre anterior. La inversión cayó 6,7% y el PIB no minero creció 1,0%. Acumula -0,5% a septiembre.</p>
+      <p><b>Impacto.</b> No es recesión técnica todavía. Para cerrar 2026 en positivo se necesitaría crecer cerca de 1,2% en el cuarto trimestre, algo que se ve difícil. Menos inversión en maquinaria significa menos demanda para proveedores mineros.</p>
+      <p><b>Lectura.</b> El ministro Quiroz ya advirtió que podría haber nuevos Imacec negativos por la minería. La lectura probable es que el golpe es de la minería y no del resto de la economía.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/pib-del-tercer-trimestre-cae-11/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="dolar">
+      <img src="https://www.latercera.com/resizer/v2/ECCLTIZPV5H2ZACMZVDTF5DUFE.jpg?auth=04f12f29eadf5138de880bd5d530599a0e47d75cc6bf942561807c9634bc60f7&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">En seguimiento</span>
+      <h3>Dólar tocó $1.007 y el cobre cayó a US$5,87 por libra</h3>
+      <p><b>Qué pasó.</b> El dólar subió a $1.007 el martes, su nivel más alto desde enero de 2025. El cobre bajó más de 3% el miércoles en Londres. Hacienda vendió US$760 millones en la semana.</p>
+      <p><b>Impacto.</b> Un dólar alto encarece importaciones, equipos y combustibles. Credicorp ve $1.020 como próximo techo y un cierre de año entre $990 y $1.000.</p>
+      <p><b>Lectura.</b> Según Cochilco, la inflación en EE.UU. sube la expectativa de alza de tasas y presiona al cobre. Las dudas sobre el retorno de la IA pesan sobre las tecnológicas.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/la-ia-y-la-inflacion-de-eeuu-los-dos-factores-tras-la-baja-del-cobre-que-determinaran-si-el-dolar-sigue-sobre-los-1000/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="fed">
+      <img src="https://www.latercera.com/resizer/v2/M5KYWEGJ7AKVBUARSGLY3IOKCA.JPG?auth=5ada935f65f30a4e002020c5e5e11b2f1b81db2e63e0fa49d93eded6f44c8b35&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>La Fed dejó tasas en 3,75%-4% y varios ven alzas de más de 25 puntos</h3>
+      <p><b>Qué pasó.</b> Las actas muestran 10 votos a 2 por mantener la tasa. Cook y Hammack pedían subir 25 puntos. Casi todos creen que harán falta nuevas alzas.</p>
+      <p><b>Impacto.</b> Tasas altas en EE.UU. fortalecen al dólar y presionan al peso y al cobre. Los créditos en dólares de empresas chilenas también se encarecen.</p>
+      <p><b>Lectura.</b> La mayoría advirtió que la deuda ligada a IA creció rápido y con estructuras poco transparentes. La lectura probable es que la Fed mira dos riesgos a la vez: inflación y burbuja.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/las-actas-de-la-fed-abren-la-puerta-a-subir-las-tasas-por-encima-de-25-puntos-en-diciembre/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="politica">
+  <h2>Política</h2>
+  <div class="notas">
+    <article class="nota" id="rabat">
+      <img src="https://www.latercera.com/resizer/v2/Q7TUNO4DQZB2LG6IJXUSMYEULU.jpg?auth=2727c29956df7d6556cfe94afb0f12c914e74b7e847e55035721e189b776d778&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">En seguimiento</span>
+      <h3>Rabat entregará a la Fiscalía los decretos de rebaja de condena</h3>
+      <p><b>Qué pasó.</b> El ministro de Justicia dijo que enviará &quot;hoy día o mañana&quot; los decretos a la Fiscalía, que investiga una presunta prevaricación administrativa. El plazo vence el viernes.</p>
+      <p><b>Impacto.</b> La acusación constitucional en su contra depende de unos pocos votos, entre ellos los del PDG. Si prospera, Kast pierde a un ministro clave.</p>
+      <p><b>Lectura.</b> Franco Parisi dijo que los dichos del subsecretario Arenas contra el PDG podrían afectar la acusación, aunque sostuvo que la considera dañina. La lectura probable es que el PDG usa su voto como carta de negociación.</p>
+      <div class="fuente"><a href="https://www.cooperativa.cl/noticias/pais/politica/rabat-entregara-decretos-de-rebaja-de-condena-a-fiscalia-hoy-dia-o/2026-11-18/172811.html" target="_blank" rel="noopener">Cooperativa</a> y <a href="https://www.latercera.com/politica/noticia/parisi-senala-que-los-puentes-nunca-van-a-estar-cortados-con-la-moneda-tras-dichos-de-arenas-pero-que-podrian-afectar-ac-contra-rabat/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="presupuesto">
+      <img src="https://www.latercera.com/resizer/v2/GMMZFGSEBRH4BH7UN73ZEZ6Z7Y.jpg?auth=eead9965046e21c5fa50ac9b71b2aa83f0c1365aa8e24f96e403ec9e4416810a&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Senado aprobó deuda pública de US$25.600 millones tras ceder Quiroz</h3>
+      <p><b>Qué pasó.</b> Se repuso el artículo con 31 votos a favor y 10 en contra, con DC, PPD y tres senadores del PC. Quiroz concedió hasta 160 millones de dólares al fondo de pensiones de alimentos (FAPP) y recursos para la Ley Ricarte Soto.</p>
+      <p><b>Impacto.</b> El Presupuesto 2027 sigue en negociación. Las concesiones restantes, en educación y derechos humanos, se informan el jueves.</p>
+      <p><b>Lectura.</b> Según el gobierno, el aporte al FAPP desactivó una acusación constitucional contra Quiroz. La lectura probable es que Hacienda cedió gasto para asegurar votos.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/quiroz-cede-y-descomprime-debate-de-presupuesto-anuncia-recursos-para-fondo-previsional-y-ley-ricarte-soto/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="apec">
+      <img src="https://www.latercera.com/resizer/v2/4BWY4PD3NZC2VPIMNH6FEDUSL4.jpeg?auth=145af519cbf197052fa45433f714c7f70baeefb60d5bf15f810e23acdbe7dc34&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Kast en la APEC: firmó visas con Hong Kong y se reunió con Fujimori</h3>
+      <p><b>Qué pasó.</b> En Shenzhen, Kast acordó con Perú avanzar a un gabinete binacional en 2027 y firmó un Working Holiday con Hong Kong, con 100 visas anuales por parte. Hoy habla en el plenario con Trump, Xi y Putin presentes, y luego viaja a Japón.</p>
+      <p><b>Impacto.</b> Chile busca mantener su comercio con China, su mayor mercado, mientras se juntan las tres potencias. Kast lanzó la temporada de cerezas y dijo que Chile es un socio serio y confiable.</p>
+      <p><b>Lectura.</b> El gobierno evita tomar partido entre EE.UU. y China. La lectura probable es que prioriza exportaciones por sobre alineamientos.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/kast-expone-en-el-plenario-de-la-apec-y-se-prepara-para-el-ultimo-tramo-de-la-gira-en-japon/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="ia">
+  <h2>IA</h2>
+  <div class="notas">
+    <article class="nota" id="anthropic">
+      <img src="https://s.france24.com/media/display/6f9a6b5c-e3b6-11f1-bcdf-7908c4e1a3c7/w:1024/p:16x9/2026-11-18T220921Z-1302439892-RC2MQOAY75RO-RTRMADP-3-ANTHROPIC-IPO.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Anthropic debutó en bolsa a US$83 por acción y recaudó unos US$79.400 millones</h3>
+      <p><b>Qué pasó.</b> Valorada en unos US$1,5 billones, es la mayor salida a bolsa de la historia, sobre los US$75.000 millones de SpaceX. Los inversionistas pidieron ocho veces las acciones ofrecidas.</p>
+      <p><b>Impacto.</b> Más capital para el desarrollo de IA y para Claude, que usan empresas en Chile. Amazon y Google quedan con una parte importante de la firma.</p>
+      <p><b>Lectura.</b> La valoración quedó bajo los US$2 billones proyectados semanas antes. La lectura probable es que el mercado sigue comprando IA, pero con más cautela.</p>
+      <div class="fuente"><a href="https://www.france24.com/es/programas/econom%C3%ADa/20261119-anthropic-apunta-a-un-r%C3%A9cord-burs%C3%A1til-con-su-salida-a-wall-street" target="_blank" rel="noopener">France 24</a></div>
+    </article>
+    <article class="nota" id="nvidia">
+      <img src="https://techcrunch.com/wp-content/uploads/2024/11/GettyImages-2150167239.jpg?resize=1200,771" alt="" onerror="this.remove()">
+      <span class="volanta">En seguimiento</span>
+      <h3>Nvidia dice que sus inversiones en startups valen US$65.500 millones</h3>
+      <p><b>Qué pasó.</b> Con la salida de Jensen Huang, Colette Kress es CEO interina. Nvidia invirtió US$58.000 millones en lo que va de su año fiscal y tiene US$118.000 millones en garantías, US$105.000 millones para el centro de datos de OpenAI.</p>
+      <p><b>Impacto.</b> Los fondos de capital de riesgo esperan menos cheques de Nvidia. Eso puede encarecer o frenar el financiamiento de startups de IA.</p>
+      <p><b>Lectura.</b> Kress dijo que evaluará &quot;rigurosamente&quot; los compromisos futuros. La lectura probable es que Nvidia será más selectiva.</p>
+      <div class="fuente"><a href="https://techcrunch.com/2026/11/17/nvidias-startup-stakes-ballooned-to-65b-but-huangs-exit-puts-future-deals-in-doubt/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </article>
+    <article class="nota" id="openai">
+      <img src="https://www.cooperativa.cl/noticias/site/artic/20261118/imag/foto_0000000420261118200001.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Gobierno firmó con OpenAI un acuerdo de cooperación en IA y recibe críticas</h3>
+      <p><b>Qué pasó.</b> El Ministerio de Ciencia firmó un memorándum con OpenAI. Según el Ejecutivo, no hay pagos ni traspaso de datos públicos. Una cláusula exige aprobación escrita de la empresa para comunicar la colaboración.</p>
+      <p><b>Impacto.</b> Define cómo el Estado adopta IA y qué proveedores usa. Afecta a quien quiera venderle tecnología al sector público.</p>
+      <p><b>Lectura.</b> La exministra Aisén Etcheverry dice que el texto compromete la soberanía y transparencia. Es su opinión, el gobierno lo niega.</p>
+      <div class="fuente"><a href="https://www.cooperativa.cl/noticias/tecnologia/industria/ia/exministra-etcheverry-cuestiono-acuerdo-del-gobierno-con-openai-los/2026-11-18/200001.html" target="_blank" rel="noopener">Cooperativa</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="mineria">
+  <h2>Minería</h2>
+  <div class="notas">
+    <article class="nota" id="sqm">
+      <img src="https://www.mch.cl/wp-content/uploads/2025/10/SQM-Litio-oct-2025.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>SQM ganó US$1.569 millones en nueve meses, 288% más</h3>
+      <p><b>Qué pasó.</b> Los ingresos subieron 95%, a US$6.340 millones. El litio vendió 232.300 toneladas, 28% más, pero su precio bajó 10% en el tercer trimestre.</p>
+      <p><b>Impacto.</b> SQM advierte un precio considerablemente menor en el cuarto trimestre. El ciclo del litio se enfría tras el máximo del segundo trimestre.</p>
+      <p><b>Lectura.</b> Según el gerente Ricardo Ramos, los precios bajaron significativamente. La lectura probable es que 2027 no repetirá estas utilidades.</p>
+      <div class="fuente"><a href="https://www.mch.cl/sqm-aumenta-288-sus-utilidades-durante-los-primeros-nueve-meses-de-2026/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+    <article class="nota" id="codelco">
+      <img src="https://www.mch.cl/wp-content/uploads/2026/11/Gaby-panoramica.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Aprueban proyecto de Codelco en Gabriela Mistral por US$868 millones</h3>
+      <p><b>Qué pasó.</b> La comisión de evaluación de Antofagasta aprobó extender la operación hasta 2055 con un nuevo rajo y lixiviación con cloruro de sodio. La resolución ambiental sale en los próximos días.</p>
+      <p><b>Impacto.</b> Mantiene al menos 40% de mano de obra regional y deja de extraer agua continental, con restitución para Sierra Gorda y Baquedano.</p>
+      <p><b>Lectura.</b> La inversión sigue sujeta a aprobación interna de Codelco. El agua es hoy el permiso que más pesa en la minería.</p>
+      <div class="fuente"><a href="https://www.mch.cl/coeva-de-la-region-de-antofagasta-aprueba-proyecto-de-codelco/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+    <article class="nota" id="canada">
+      <img src="https://www.mch.cl/wp-content/uploads/2026/11/WhatsAppImage20261118at01.16.22.jpeg" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Chile y Canadá negociarán un memorando de minerales críticos</h3>
+      <p><b>Qué pasó.</b> El canciller Pérez Mackenna y la ministra Anita Anand acordaron iniciar la negociación en la APEC. Canadá invirtió unos US$47.700 millones en Chile, sobre todo en minería y energía.</p>
+      <p><b>Impacto.</b> El comercio bilateral ronda US$2.000 millones al año. Abre espacio a socios y financiamiento para proyectos de litio y cobre.</p>
+      <p><b>Lectura.</b> La lectura probable es que Chile diversifica socios en minerales críticos más allá de EE.UU. y China.</p>
+      <div class="fuente"><a href="https://www.mch.cl/chile-y-canada-impulsan-agenda-de-colaboracion-en-minerales-criticos-e-inversiones/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
