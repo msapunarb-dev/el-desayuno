@@ -1,0 +1,292 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El Desayuno | sábado 21 de noviembre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --papel:#f7f2e8; --tinta:#1a1a1a; --gris:#5c5650; --linea:#1a1a1a; --acento:#9b1c1c; --caja:#efe7d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "Source Serif 4", Georgia, serif; }
+  .hoja { max-width:1180px; margin:0 auto; padding:24px 32px 64px; }
+  a { color:inherit; }
+  img { max-width:100%; display:block; }
+
+  /* Cabecera */
+  .cabecera { text-align:center; border-bottom:4px double var(--linea); padding-bottom:10px; }
+  .cabecera h1 { font:900 76px/1 "Playfair Display", Georgia, serif; margin:6px 0 10px; letter-spacing:-1px; }
+  .fecha { display:flex; justify-content:space-between; border-top:1px solid var(--linea); padding-top:6px;
+           font:500 13px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; }
+  nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea);
+        display:flex; justify-content:center; gap:28px; padding:8px 0; font:700 13px "Inter", sans-serif;
+        text-transform:uppercase; letter-spacing:.08em; }
+  nav a { text-decoration:none; }
+  nav a:hover { color:var(--acento); }
+
+  /* Titulos de seccion */
+  .seccion { margin-top:44px; scroll-margin-top:48px; }
+  .seccion > h2 { font:900 34px "Playfair Display", Georgia, serif; margin:0 0 18px; padding-bottom:6px;
+                  border-bottom:3px solid var(--linea); }
+
+  /* Portada */
+  .principal { display:grid; grid-template-columns:1.6fr 1fr; gap:28px; padding:24px 0;
+               border-bottom:1px solid var(--linea); }
+  .principal h3 { font:900 40px/1.1 "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .principal p { font-size:19px; }
+  .secundarias { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; padding:20px 0; }
+  .secundarias article + article { border-left:1px solid #cfc6b4; padding-left:24px; }
+  .secundarias img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .secundarias h3 { font:700 20px/1.2 "Playfair Display", Georgia, serif; margin:0 0 6px; }
+  .secundarias p { font-size:15.5px; margin:0; }
+  .ir { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; color:var(--acento);
+        text-decoration:none; display:inline-block; margin-top:8px; }
+
+  /* En seguimiento */
+  .seguimiento { background:var(--caja); border-top:3px solid var(--linea); padding:18px 22px; margin-top:8px; }
+  .seguimiento h2 { font:900 22px "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .fijos { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .fijo h4 { font:700 18px "Playfair Display", Georgia, serif; margin:0 0 4px; }
+  .fijo p { margin:4px 0; font-size:15.5px; }
+  .estado { font:700 11px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em;
+            padding:2px 7px; border:1px solid currentColor; }
+  .estado.mueve { color:var(--acento); }
+  .estado.quieto { color:var(--gris); }
+
+  /* Notas de seccion */
+  .notas { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .nota { scroll-margin-top:48px; }
+  .nota + .nota { border-left:1px solid #cfc6b4; padding-left:28px; }
+  .nota img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .volanta { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--acento); }
+  .nota h3 { font:700 23px/1.2 "Playfair Display", Georgia, serif; margin:4px 0 10px; }
+  .nota p { margin:0 0 9px; font-size:16px; }
+  .nota b { font-family:"Inter", sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; }
+  .fuente { font:500 13px "Inter", sans-serif; border-top:1px solid #cfc6b4; padding-top:8px; margin-top:10px; }
+  .fuente a { color:var(--acento); font-weight:700; }
+
+  @media (max-width:900px) {
+    .principal, .secundarias, .fijos, .notas { grid-template-columns:1fr; }
+    .secundarias article + article, .nota + .nota { border-left:0; padding-left:0; }
+    .cabecera h1 { font-size:52px; }
+  }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<header class="cabecera">
+  <h1>El Desayuno</h1>
+  <div class="fecha"><span>Sábado 21 de noviembre de 2026</span><span>Edición N° 6</span><span>10 min</span></div>
+</header>
+<nav>
+  <a href="#portada">Portada</a><a href="#economia">Economía</a><a href="#politica">Política</a><a href="#ia">IA</a><a href="#mineria">Minería</a>
+</nav>
+
+<!-- ============ PORTADA ============ -->
+<section id="portada">
+  <article class="principal">
+    <img src="https://www.latercera.com/resizer/v2/U5VXWD3K2345TPHGW56QNTMSAY.jpg?auth=d9e4af4cb0033d577d474a95ed06444485985820de4b0f16a045829dfa710d5e&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+    <div>
+      <span class="volanta">Economía</span>
+      <h3>Nasdaq cae 5,28% y el S&P 500 entra en corrección en la peor semana desde abril de 2025</h3>
+      <p>Nasdaq -5,28% y S&P 500 -3,7% el viernes. Dow -8% y S&P -8,6% en la semana, la peor desde abril de 2025. Nvidia cayó 14% y el dólar subió a $1.022,50.</p>
+      <a class="ir" href="#wall">Seguir leyendo</a>
+    </div>
+  </article>
+  <div class="secundarias">
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/NFUJ7WAVQJEMNEYSTRRXUVGSCM.jpg?auth=b0930c653749467820f9f95b292fc2a286b142cc7bd549ab2b047390642ddbf0&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Economía</span>
+      <h3>Dólar cierra en $1.022,50, su mayor valor en más de cuatro años</h3>
+      <p>Mayor valor en más de cuatro años, tras tres alzas seguidas. El mercado espera un alza de tasas de la Fed.</p>
+      <a class="ir" href="#dolar">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/FX6R624335A7JJSC6JBXZF2L3Q.jpg?auth=9380bf4f333b1593b82464da85dbe39e32e353ac34f4daae10a9af9589355fa7&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Política</span>
+      <h3>Rabat entrega su defensa y dice que la acusación no puede ser un voto de censura</h3>
+      <p>Dice que aplicó el criterio de la Corte Suprema. La Cámara vota y el conteo preliminar es estrecho.</p>
+      <a class="ir" href="#rabat">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/PIF3PFRAGNCGTCSP55G7CK76NU.jpg?auth=3a85de5b1ed49a3806912159a36f5d0a2eef41a02c2e9b0f2919336da869116e&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">IA</span>
+      <h3>Nvidia cae 14% por reporte de que la SEC revisa su contabilidad</h3>
+      <p>Reuters: la SEC revisa su contabilidad. Valía cerca de US$6 billones y hoy US$3,03 billones.</p>
+      <a class="ir" href="#nvidia">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.mch.cl/wp-content/uploads/2020/07/catodos.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Minería</span>
+      <h3>Cobre cierra en US$5,55 y baja 10,13% en la semana</h3>
+      <p>Cae 10,13% en la semana, con dólar fuerte y dudas sobre China e IA.</p>
+      <a class="ir" href="#cobre">Seguir leyendo</a>
+    </article>
+  </div>
+  <div class="seguimiento">
+    <h2>En seguimiento</h2>
+    <div class="fijos">
+      <div class="fijo">
+        <h4>Acusación constitucional contra el ministro Rabat</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Libelo de la oposición contra el ministro de Justicia por firmar decretos que rebajaron condenas a violadores y abusadores de menores</p>
+        <p><b>Hoy:</b> Rabat entregó su defensa y la comisión revisora lo recibe el lunes.</p>
+        <a class="ir" href="#rabat">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>Dólar sobre $1.000</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> El peso se debilita por tasas altas en EE.UU. y cobre a la baja; sobre $1.000 suben importaciones y combustibles</p>
+        <p><b>Hoy:</b> Cerró en $1.022,50, su mayor valor en más de cuatro años.</p>
+        <a class="ir" href="#dolar">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>Escándalo Nvidia</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Jensen Huang dejó Nvidia el 12-11 tras reportes de su relación con una exejecutiva de Megaspeed, cliente acusado de vínculos con la inteligencia china</p>
+        <p><b>Hoy:</b> Reuters reporta que la SEC revisa su contabilidad y la acción cayó 14%.</p>
+        <a class="ir" href="#nvidia">Seguir leyendo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="economia">
+  <h2>Economía</h2>
+  <div class="notas">
+    <article class="nota" id="wall">
+      <img src="https://www.latercera.com/resizer/v2/U5VXWD3K2345TPHGW56QNTMSAY.jpg?auth=d9e4af4cb0033d577d474a95ed06444485985820de4b0f16a045829dfa710d5e&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Nasdaq cae 5,28% y el S&P 500 entra en corrección en la peor semana desde abril de 2025</h3>
+      <p><b>Qué pasó.</b> El viernes 20 el Nasdaq perdió 5,28% y quedó en negativo en 2026 (-2,7%), el S&P 500 cayó 3,7% a 6.910 puntos y el Dow 1,93%. En la semana, el Dow bajó 8% y el S&P 8,6%. Nvidia cayó cerca de 14%, Micron 14% y AMD más de 13%.</p>
+      <p><b>Impacto.</b> El IPSA igual cerró con alza de 0,16%, pero el dólar subió a $1.022,50.</p>
+      <p><b>Lectura.</b> La Tercera atribuye la baja a toma de utilidades tras el debut de Anthropic, dudas sobre el gasto en IA, la salida de Huang, el triunfo demócrata en las elecciones de mitad de período y el temor a alzas de tasas de la Fed. La lectura probable es que varios temores se juntaron en un mercado muy cargado de tecnológicas.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/acciones-mundiales-se-derrumban-wall-street-en-correccion-nasdaq-negativo-en-el-ano/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="dolar">
+      <img src="https://www.latercera.com/resizer/v2/NFUJ7WAVQJEMNEYSTRRXUVGSCM.jpg?auth=b0930c653749467820f9f95b292fc2a286b142cc7bd549ab2b047390642ddbf0&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Dólar cierra en $1.022,50, su mayor valor en más de cuatro años</h3>
+      <p><b>Qué pasó.</b> Subió $5,60 el viernes y suma tres alzas seguidas (+$29,05). El máximo del día fue $1.022,88. El mercado descuenta un alza de 25 puntos base de la Fed en su próxima reunión.</p>
+      <p><b>Impacto.</b> Encarece importaciones, combustibles e insumos en dólares. A quien monta un negocio con equipos importados le sube el costo; a los exportadores les mejora el ingreso en pesos.</p>
+      <p><b>Lectura.</b> Según XTB, pesan las tasas altas en EE.UU. y la demanda de dólares por la apertura en bolsa de Anthropic. La lectura probable es que el dólar fuerte a nivel global y la caída del cobre se refuerzan entre sí.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/el-valor-del-dolar-en-chile-el-20-de-noviembre-de-2026/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="desempleo">
+      <img src="https://www.latercera.com/resizer/v2/3CTRXN6KBZABDFU4OOVCRUIV5E.jpg?auth=04e68c5bd707bfede8d9aa5a7d21f13f84811d909e8a240db96f0403a8d47955&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Desempleo en 9,8%: Rau no descarta nuevas inyecciones de recursos</h3>
+      <p><b>Qué pasó.</b> El ministro del Trabajo, Tomás Rau, dijo en Radio13C que hay más de un millón de desocupados con una tasa de 9,8%. Monitorea subsidios a la contratación como Chile Despega y acelera obras públicas avanzadas. El lunes habrá gabinete con el Presidente.</p>
+      <p><b>Impacto.</b> Si el empleo no mejora, podrían venir más subsidios y gasto fiscal. Para quien contrata, los subsidios bajan el costo de sumar gente.</p>
+      <p><b>Lectura.</b> Según Rau, el crecimiento sería cercano a 3% el próximo año. La lectura probable es que el Gobierno prepara medidas antes de la discusión del Presupuesto.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/ministro-rau-plantea-la-posibilidad-de-nuevas-medidas-en-caso-de-que-la-tasa-de-desempleo-siga-alta/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="politica">
+  <h2>Política</h2>
+  <div class="notas">
+    <article class="nota" id="rabat">
+      <img src="https://www.latercera.com/resizer/v2/FX6R624335A7JJSC6JBXZF2L3Q.jpg?auth=9380bf4f333b1593b82464da85dbe39e32e353ac34f4daae10a9af9589355fa7&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Rabat entrega su defensa y dice que la acusación no puede ser un voto de censura</h3>
+      <p><b>Qué pasó.</b> El ministro de Justicia respondió los tres capítulos del libelo: rebajas a condenados por delitos sexuales contra menores, rebajas por lesa humanidad y probidad. Su defensa dice que aplicó el criterio de la Corte Suprema y que no puede imponer por decreto exigencias que solo fija el legislador.</p>
+      <p><b>Impacto.</b> Si prospera, el ministro queda inhabilitado. Se vota en la Cámara, donde un conteo preliminar dejaba la acusación a un voto de la mayoría. Un cambio de Justicia afecta la agenda de seguridad y cárceles.</p>
+      <p><b>Lectura.</b> Según la defensa, los dos beneficiados por lesa humanidad cumplieron cerca del 90% de sus condenas. La lectura probable es que Rabat busca encuadrar el tema como diferencia jurídica y no como falta política.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/no-puede-convertirse-en-un-voto-de-censura-rabat-entrega-defensa-ante-ac-y-descarta-infracciones-en-rebajas-de-condenas/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="ppto">
+      <img src="https://www.latercera.com/resizer/v2/UZYVSYPUWBD4TFUPRTHLNQDS34.jpg?auth=ba3c8b3843f1bfc0ec289faa865e2ad58124b0268a791dd809d328263c54dcd0&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Senado despacha el Presupuesto 2027 con endeudamiento de hasta US$25.000 millones</h3>
+      <p><b>Qué pasó.</b> El Senado aprobó el artículo de endeudamiento hasta US$25.000 millones, subió Educación en más de $47 mil millones y restituyó siete partidas rechazadas por la Cámara, entre ellas Minería. Rechazó Agricultura tras un empate 14-14, por el recorte a Indap y al SAG. El lunes 23 vota la Cámara; el plazo final es el domingo 29.</p>
+      <p><b>Impacto.</b> Define cuánto gasta el Estado en 2027 y cuánta deuda toma. Si la Cámara rechaza los cambios, va a comisión mixta.</p>
+      <p><b>Lectura.</b> La lectura probable es que el Ejecutivo negocia partida por partida para llegar al 29.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/tras-despacho-del-presupuesto-2027-del-senado-lo-que-se-aprobo-rechazo-y-lo-que-sigue-en-la-discusion-del-erario-fiscal/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="japon">
+      <img src="https://www.latercera.com/resizer/v2/O7MAEPLELVDM5F7FCU5XF5KLYM.jpeg?auth=4750a58fb001ed5d4e23095abda178e76370e75c411a288fbcc9f5236720a145&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Kast pide a empresarios japoneses invertir en minería y energía y ofrece 20 años de invariabilidad tributaria</h3>
+      <p><b>Qué pasó.</b> En Tokio, ante 140 asistentes, Kast cerró su gira por Asia con el lema "nos propusimos destrabar la inversión". Ofreció invariabilidad tributaria de 20 años y menos tiempo de permisos.</p>
+      <p><b>Impacto.</b> Para minería, energía, forestal, infraestructura y salmonicultura, las reglas de largo plazo bajan el riesgo de invertir. El artículo no informa montos ni empresas comprometidas.</p>
+      <p><b>Lectura.</b> Kast planteó refinar y procesar materias primas en Chile con socios japoneses y no solo exportarlas. La lectura probable es que busca inversión que agregue valor, no solo extracción.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/kast-inicia-visita-a-japon-con-llamado-a-empresarios-nipones-a-invertir-en-chile-nos-propusimos-destrabar-la-inversion/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="ia">
+  <h2>IA</h2>
+  <div class="notas">
+    <article class="nota" id="nvidia">
+      <img src="https://www.latercera.com/resizer/v2/PIF3PFRAGNCGTCSP55G7CK76NU.jpg?auth=3a85de5b1ed49a3806912159a36f5d0a2eef41a02c2e9b0f2919336da869116e&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">En seguimiento</span>
+      <h3>Nvidia cae 14% por reporte de que la SEC revisa su contabilidad</h3>
+      <p><b>Qué pasó.</b> Reuters informó, citando fuentes, que la SEC investiga las prácticas contables de Nvidia. La acción cerró en US$125,53, su peor día desde enero de 2025, y la empresa pasó de cerca de US$6 billones a US$3,03 billones. El jueves el fiscal de California Rob Bonta emitió una citación para saber si chips avanzados llegaron a China.</p>
+      <p><b>Impacto.</b> Nvidia es el proveedor central de los chips de IA y arrastra a todo el sector. Si se encarece o frena la inversión en centros de datos, sube el costo de la IA para quien la usa.</p>
+      <p><b>Lectura.</b> Un analista de XTB advirtió que una investigación de la SEC no prueba una infracción y que su alcance es desconocido. La lectura probable es que el mercado castiga la incertidumbre tras la salida de Huang.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/acciones-de-nvidia-se-desploman-tras-reportes-sobre-investigacion-del-regulador-sobre-su-contabilidad/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="anthropic">
+      <img src="https://www.latercera.com/resizer/v2/5BI2C6BUOBCZ7F3E3W3AVS6KZM.PNG?auth=f31d84ceb50bcf581b7e0b97eb333217298b4a33fcbaaebc6b3aa69f204d1527&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Anthropic cae 8,5% a US$88,91 en su segundo día en bolsa</h3>
+      <p><b>Qué pasó.</b> Tras subir 17% en su debut, la mayor oferta pública inicial registrada, la acción bajó 8,5% a US$88,91.</p>
+      <p><b>Impacto.</b> Es la primera vez que una empresa de modelos de IA cotiza a este tamaño. Su precio sirve de termómetro del apetito por IA, que influye en el financiamiento de startups tecnológicas.</p>
+      <p><b>Lectura.</b> La lectura probable es que parte del salto inicial fue toma de utilidades en una jornada de ventas generalizadas, no un juicio sobre el negocio.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/acciones-de-anthropic-caen-tras-debut-record-en-bolsa/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="openai">
+      <img src="https://www.latercera.com/resizer/v2/ALP3JGJX3ZFKBDJANUTNPM3E6E.jpeg?auth=69594746a9fc6657646054c553ebb15bcd249d74f702926fde75ad5e95049cd3&amp;smart=true&amp;width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Contraloría pide a Ciencia información sobre su acuerdo con OpenAI y da 10 días hábiles</h3>
+      <p><b>Qué pasó.</b> La División Jurídica de Contraloría ofició al Ministerio de Ciencia por el memorándum que la ministra Ximena Lincolao firmó con OpenAI en San Francisco. El plazo corre desde el 18 de noviembre.</p>
+      <p><b>Impacto.</b> Marca cómo puede contratar el Estado con empresas de IA extranjeras, sin licitación y con cláusulas de confidencialidad. Eso importa a proveedores locales de tecnología.</p>
+      <p><b>Lectura.</b> Según Araya, la ministra "excedió por largo las competencias". La Contraloría aún no se pronuncia, y esa es la postura de un parlamentario.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/contraloria-oficia-a-lincolao-para-que-entregue-informacion-de-acuerdo-con-openai-y-le-da-plazo-de-diez-dias-para-responder/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="mineria">
+  <h2>Minería</h2>
+  <div class="notas">
+    <article class="nota" id="cobre">
+      <img src="https://www.mch.cl/wp-content/uploads/2020/07/catodos.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Cobre cierra en US$5,55 y baja 10,13% en la semana</h3>
+      <p><b>Qué pasó.</b> El cobre al contado cerró el viernes en US$5,55 la libra, con caída semanal de 10,13%.</p>
+      <p><b>Impacto.</b> Menos cobre significa menos ingresos fiscales, menos inversión minera y más presión sobre el empleo regional. El peso se debilita al mismo tiempo.</p>
+      <p><b>Lectura.</b> Según Cochilco, pesan el dólar fuerte, las expectativas de alzas de tasas tras las minutas de la Fed del 18 de noviembre, dudas sobre China y la inversión en IA, y salidas de inversionistas.</p>
+      <div class="fuente"><a href="https://www.mch.cl/las-razones-tras-la-caida-del-precio-del-cobre/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+    <article class="nota" id="tierras">
+      <img src="https://www.mch.cl/wp-content/uploads/2026/11/Relave-minero-imagen-referencial.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Estudio de la UCN halla tierras raras en 649 depósitos de relaves, 46 sobre 150 g/t</h3>
+      <p><b>Qué pasó.</b> Investigadores de la Universidad Católica del Norte, liderados por Elizabeth Lam, analizaron 649 relaves en nueve regiones con datos de Sernageomin. El relave típico tiene 71 g/t. El más alto, en Antofagasta, llega a 1.645 g/t.</p>
+      <p><b>Impacto.</b> El neodimio, praseodimio, disprosio y terbio se usan en imanes para autos eléctricos y turbinas eólicas. Muchos depósitos ricos están abandonados, así que el primer obstáculo sería legal.</p>
+      <p><b>Lectura.</b> El estudio no evalúa rentabilidad ni cuantifica reservas. La lectura probable es que sirve para priorizar dónde medir mejor, no para anunciar un negocio.</p>
+      <div class="fuente"><a href="https://www.mch.cl/investigacion-de-la-ucn-detecta-relaves-mineros-con-concentraciones-de-tierras-raras/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+    <article class="nota" id="pamma">
+      <img src="https://www.mch.cl/wp-content/uploads/2026/11/MinaXimena_SectorSierraQuebrada3Puntas_ProductorJorgeCarvajal-3-scaled.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Minería abre segunda convocatoria de PAMMA Reactiva con hasta $3 millones por proyecto</h3>
+      <p><b>Qué pasó.</b> El Ministerio de Minería abrió la segunda convocatoria para pequeños productores afectados por eventos meteorológicos en la provincia del Huasco y Tierra Amarilla (Atacama) y en Coquimbo. Cubre combustible y maquinaria para recuperar caminos y accesos. Postulan hasta el 15 de diciembre en fondos.gob.cl.</p>
+      <p><b>Impacto.</b> Es ayuda acotada para la pequeña minería de dos regiones. Forma parte del plan Minería en Marcha.</p>
+      <p><b>Lectura.</b> La lectura probable es que el Gobierno apunta a mantener operando a los pequeños productores mientras cae el precio del cobre.</p>
+      <div class="fuente"><a href="https://www.mch.cl/ministerio-de-mineria-lanza-segunda-convocatoria-de-pamma-reactiva/" target="_blank" rel="noopener">Minería Chilena</a></div>
+    </article>
+  </div>
+</section>
+
+
+</div>
+</body>
+</html>
