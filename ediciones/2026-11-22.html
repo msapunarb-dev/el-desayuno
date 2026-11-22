@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>El Desayuno | domingo 22 de noviembre</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@500;700&display=swap" rel="stylesheet">
+<style>
+  :root { --papel:#f7f2e8; --tinta:#1a1a1a; --gris:#5c5650; --linea:#1a1a1a; --acento:#9b1c1c; --caja:#efe7d6; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--papel); color:var(--tinta); font:17px/1.55 "Source Serif 4", Georgia, serif; }
+  .hoja { max-width:1180px; margin:0 auto; padding:24px 32px 64px; }
+  a { color:inherit; }
+  img { max-width:100%; display:block; }
+
+  /* Cabecera */
+  .cabecera { text-align:center; border-bottom:4px double var(--linea); padding-bottom:10px; }
+  .cabecera h1 { font:900 76px/1 "Playfair Display", Georgia, serif; margin:6px 0 10px; letter-spacing:-1px; }
+  .fecha { display:flex; justify-content:space-between; border-top:1px solid var(--linea); padding-top:6px;
+           font:500 13px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; }
+  nav { position:sticky; top:0; z-index:5; background:var(--papel); border-bottom:1px solid var(--linea);
+        display:flex; justify-content:center; gap:28px; padding:8px 0; font:700 13px "Inter", sans-serif;
+        text-transform:uppercase; letter-spacing:.08em; }
+  nav a { text-decoration:none; }
+  nav a:hover { color:var(--acento); }
+
+  /* Titulos de seccion */
+  .seccion { margin-top:44px; scroll-margin-top:48px; }
+  .seccion > h2 { font:900 34px "Playfair Display", Georgia, serif; margin:0 0 18px; padding-bottom:6px;
+                  border-bottom:3px solid var(--linea); }
+
+  /* Portada */
+  .principal { display:grid; grid-template-columns:1.6fr 1fr; gap:28px; padding:24px 0;
+               border-bottom:1px solid var(--linea); }
+  .principal h3 { font:900 40px/1.1 "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .principal p { font-size:19px; }
+  .secundarias { display:grid; grid-template-columns:repeat(4,1fr); gap:24px; padding:20px 0; }
+  .secundarias article + article { border-left:1px solid #cfc6b4; padding-left:24px; }
+  .secundarias img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .secundarias h3 { font:700 20px/1.2 "Playfair Display", Georgia, serif; margin:0 0 6px; }
+  .secundarias p { font-size:15.5px; margin:0; }
+  .ir { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em; color:var(--acento);
+        text-decoration:none; display:inline-block; margin-top:8px; }
+
+  /* En seguimiento */
+  .seguimiento { background:var(--caja); border-top:3px solid var(--linea); padding:18px 22px; margin-top:8px; }
+  .seguimiento h2 { font:900 22px "Playfair Display", Georgia, serif; margin:0 0 12px; }
+  .fijos { display:grid; grid-template-columns:repeat(3,1fr); gap:22px; }
+  .fijo h4 { font:700 18px "Playfair Display", Georgia, serif; margin:0 0 4px; }
+  .fijo p { margin:4px 0; font-size:15.5px; }
+  .estado { font:700 11px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.06em;
+            padding:2px 7px; border:1px solid currentColor; }
+  .estado.mueve { color:var(--acento); }
+  .estado.quieto { color:var(--gris); }
+
+  /* Notas de seccion */
+  .notas { display:grid; grid-template-columns:repeat(3,1fr); gap:28px; }
+  .nota { scroll-margin-top:48px; }
+  .nota + .nota { border-left:1px solid #cfc6b4; padding-left:28px; }
+  .nota img { aspect-ratio:3/2; object-fit:cover; margin-bottom:10px; }
+  .volanta { font:700 12px "Inter", sans-serif; text-transform:uppercase; letter-spacing:.08em; color:var(--acento); }
+  .nota h3 { font:700 23px/1.2 "Playfair Display", Georgia, serif; margin:4px 0 10px; }
+  .nota p { margin:0 0 9px; font-size:16px; }
+  .nota b { font-family:"Inter", sans-serif; font-size:12.5px; text-transform:uppercase; letter-spacing:.05em; }
+  .fuente { font:500 13px "Inter", sans-serif; border-top:1px solid #cfc6b4; padding-top:8px; margin-top:10px; }
+  .fuente a { color:var(--acento); font-weight:700; }
+
+  @media (max-width:900px) {
+    .principal, .secundarias, .fijos, .notas { grid-template-columns:1fr; }
+    .secundarias article + article, .nota + .nota { border-left:0; padding-left:0; }
+    .cabecera h1 { font-size:52px; }
+  }
+</style>
+</head>
+<body>
+<div class="hoja">
+
+<header class="cabecera">
+  <h1>El Desayuno</h1>
+  <div class="fecha"><span>Domingo 22 de noviembre de 2026</span><span>Edición N° 7</span><span>10 min</span></div>
+</header>
+<nav>
+  <a href="#portada">Portada</a><a href="#economia">Economía</a><a href="#politica">Política</a><a href="#ia">IA</a><a href="#mineria">Minería</a>
+</nav>
+
+<!-- ============ PORTADA ============ -->
+<section id="portada">
+  <article class="principal">
+    <img src="https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7026495-codelco-cerraria-2026-con-su-produccion-mas-baja-en-tres-decadas-pese-a-precios-historicos-del-cobre.jpg" alt="" onerror="this.remove()">
+    <div>
+      <span class="volanta">Minería</span>
+      <h3>Codelco produciría 1,2 millones de toneladas, lo menos en 31 años</h3>
+      <p>Según Cochilco y BioBioChile, la estatal cierra 2026 en su nivel más bajo desde 1995, mientras el cobre cotiza cerca de máximos. Fontaine confirma la cifra y el Gobierno estudia abrir el capital a privados.</p>
+      <a class="ir" href="#min-codelco">Seguir leyendo</a>
+    </div>
+  </article>
+
+  <div class="secundarias">
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/FX6R624335A7JJSC6JBXZF2L3Q.jpg?auth=9380bf4f333b1593b82464da85dbe39e32e353ac34f4daae10a9af9589355fa7&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Política</span>
+      <h3>Rabat entrega su defensa; la comisión sesiona el lunes</h3>
+      <p>Dice que la acusación no puede ser un voto de censura.</p>
+      <a class="ir" href="#pol-rabat">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://www.latercera.com/resizer/v2/4T7BDD6JX5EKBC4ERNU4TJH2H4.jpg?auth=474ca22590e968c76f6ccf151500a23615d1b85532fe574f771ee466b22370b0&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Economía</span>
+      <h3>La pobreza podría subir por segunda vez desde 1990</h3>
+      <p>Desempleo de 9,8% y alimentos 8,4% más caros en dos años.</p>
+      <a class="ir" href="#eco-pobreza">Seguir leyendo</a>
+    </article>
+    <article>
+      <img src="https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800" alt="" onerror="this.remove()">
+      <span class="volanta">IA</span>
+      <h3>Nvidia dejará de vender el H200 en China</h3>
+      <p>Huang sigue fuera y la acción cae.</p>
+      <a class="ir" href="#ia-nvidia">Seguir leyendo</a>
+    </article>
+    <article>
+      <span class="volanta">IA</span>
+      <h3>ONU: sin compromiso vinculante sobre armas autónomas</h3>
+      <p>Rusia, EE.UU. e Israel frenaron un tratado.</p>
+      <a class="ir" href="#ia-armas">Seguir leyendo</a>
+    </article>
+  </div>
+
+  <div class="seguimiento">
+    <h2>En seguimiento</h2>
+    <div class="fijos">
+      <div class="fijo">
+        <h4>Acusación constitucional contra Rabat</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Libelo de la oposición contra el ministro de Justicia por decretos que rebajaron condenas a violadores y abusadores de menores.</p>
+        <p><b>Hoy:</b> Rabat entregó su defensa y la comisión lo recibe el lunes a las 16.00.</p>
+        <a class="ir" href="#pol-rabat">Seguir leyendo</a>
+      </div>
+      <div class="fijo">
+        <h4>Dólar sobre $1.000</h4>
+        <span class="estado quieto">Sin cambios</span>
+        <p><b>Qué es:</b> El peso se debilita por tasas altas en EE.UU. y cobre a la baja; sobre $1.000 suben importaciones y combustibles.</p>
+        <p><b>Último hito:</b> 21-11-2026: cerró el viernes en $1.022,50, su mayor valor en más de cuatro años; el mercado reabre el lunes.</p>
+      </div>
+      <div class="fijo">
+        <h4>Escándalo Nvidia</h4>
+        <span class="estado mueve">Se movió</span>
+        <p><b>Qué es:</b> Jensen Huang dejó Nvidia el 12-11 tras reportes de su relación con una exejecutiva de Megaspeed, cliente acusado de vínculos con la inteligencia china.</p>
+        <p><b>Hoy:</b> Nvidia dejará de vender el H200 en China y Huang sigue fuera.</p>
+        <a class="ir" href="#ia-nvidia">Seguir leyendo</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="seccion" id="economia">
+  <h2>Economía</h2>
+  <div class="notas">
+    <article class="nota" id="eco-pobreza">
+      <img src="https://www.latercera.com/resizer/v2/4T7BDD6JX5EKBC4ERNU4TJH2H4.jpg?auth=474ca22590e968c76f6ccf151500a23615d1b85532fe574f771ee466b22370b0&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>La pobreza podría subir por segunda vez desde 1990 en la Casen 2026</h3>
+      <p><b>Qué pasó.</b> La Casen 2024 midió 17,3% de pobreza por ingresos (3.478.364 personas). La Casen 2026 se levanta entre el 1 de noviembre y el 31 de enero, con resultados a mediados de 2027. Los alimentos subieron 8,4% y los arriendos 10,8% desde noviembre de 2024, según el INE.</p>
+      <p><b>Impacto.</b> La PGU, que subió 16,8%, amortigua a los hogares con mayores de 75 años. Según los expertos, el margen del Gobierno es acotado: la encuesta ya está en curso y hay poco espacio fiscal para nuevos subsidios.</p>
+      <p><b>Lectura.</b> Andrés Hernando (UDP) cree "lo más probable" que ya haya subido. Es un dato que se usará políticamente cuando salga.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/el-mal-escenario-economico-amenaza-las-cifras-de-pobreza-podrian-anotar-su-segunda-alza-desde-1990/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="eco-subsidio">
+      <img src="https://www.latercera.com/resizer/v2/JCSAOIE7D5FJHNDOZ5SXQKUNWM.JPG?auth=9e1a4d398a3be235a32ff2188fbc7599c2d697f7a2d15907c43e7ad331b811c9&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Subsidio al empleo: 161 mil postulaciones para 75 mil cupos</h3>
+      <p><b>Qué pasó.</b> El plan partió en julio con 25 mil cupos y en septiembre se amplió en 75 mil. Entre julio y noviembre se entregaron casi 24 mil subsidios. Paga hasta 50% de un ingreso mínimo por hombre contratado y hasta 60% por mujer ($553.553 hoy), por máximo cuatro meses, con pagos hasta el 31 de marzo de 2027.</p>
+      <p><b>Impacto.</b> Sirve a pymes que quieran contratar, con tope de 200 trabajadores por empresa. La postulación sigue hasta mediados de diciembre.</p>
+      <p><b>Lectura.</b> La lectura probable es que la demanda duplica la oferta porque el desempleo está en 9,8% y las empresas ven el subsidio como una forma barata de contratar.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/subsidios-de-emergencia-al-empleo-demanda-duplica-cupos-que-quedan-por-asignar/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="eco-retail">
+      <img src="https://www.latercera.com/resizer/v2/LNCQ3W2BVRHZJC2LPHVAF7W3J4.jpg?auth=2352197fa74d20bce2acca1daa8180c1c57d3b76efc2a101860c7393cb88c6a2&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>El Niño pega al retail: Cencosud cae 4% y los almacenes de barrio 5% en volumen</h3>
+      <p><b>Qué pasó.</b> Los ingresos de tiendas por departamento de Cencosud bajaron 4% en el tercer trimestre y los de Hites 1,5%. Las ventas de Falabella en Chile cayeron 3%. Según la Cámara de Comercio de Santiago, los almacenes de barrio vendieron cerca de 5% menos en volumen en octubre.</p>
+      <p><b>Impacto.</b> Un invierno largo retrasa el verano: más café y sopas, menos helados. Sodimac espera condiciones adversas hasta fin de año.</p>
+      <p><b>Lectura.</b> Las propias empresas no desglosan cuánto es clima. Hites suma inflación, desempleo y bajo crecimiento, así que el clima es parte de la explicación, no toda.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/el-retail-tambien-siente-los-efectos-de-el-nino/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="politica">
+  <h2>Política</h2>
+  <div class="notas">
+    <article class="nota" id="pol-rabat">
+      <img src="https://www.latercera.com/resizer/v2/FX6R624335A7JJSC6JBXZF2L3Q.jpg?auth=9380bf4f333b1593b82464da85dbe39e32e353ac34f4daae10a9af9589355fa7&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">En seguimiento</span>
+      <h3>Rabat entrega su defensa y la comisión de la acusación lo recibe el lunes a las 16.00</h3>
+      <p><b>Qué pasó.</b> El ministro de Justicia dijo que la acusación no puede ser un "voto de censura". Su defensa sostiene que la Ley 21.421 no fijó cómo aplicar la exclusión de beneficios a delitos anteriores y que siguió el criterio de la Corte Suprema. En lesa humanidad, dice que los dos beneficiados cumplieron cerca del 90% de la condena.</p>
+      <p><b>Impacto.</b> Es el primer paso del proceso: la comisión revisora sesiona este lunes. Según su presidente, Soto, Justicia aún no entrega los decretos de rebaja de penas.</p>
+      <p><b>Lectura.</b> La lectura probable es que la defensa apuesta a que el debate sea jurídico (qué podía hacer un ministro) y no político, que es donde la oposición presenta el caso.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/no-puede-convertirse-en-un-voto-de-censura-rabat-entrega-defensa-ante-ac-y-descarta-infracciones-en-rebajas-de-condenas/" target="_blank" rel="noopener">La Tercera</a> y <a href="https://www.latercera.com/politica/noticia/ac-contra-rabat-soto-confirma-contestacion-del-ministro-y-advierte-que-justicia-aun-no-entrega-decretos-de-rebaja-de-penas/" target="_blank" rel="noopener">La Tercera (comisión)</a></div>
+    </article>
+    <article class="nota" id="pol-firmas">
+      <img src="https://www.latercera.com/resizer/v2/XU2B4KS4NBHIDOFN55KQ2TCVAE.jpg?auth=86696e44231d83b5a479e14edd2f2d1006fb432dc25618570a9a5d65c21ac9aa&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Caso de las firmas: senadores dicen que no autorizaron que se retiraran sus permisos</h3>
+      <p><b>Qué pasó.</b> En la última discusión de la Ley de Presupuestos se retiraron los permisos constitucionales de los senadores Fidel Espinoza (PS) y Ximena Órdenes (PPD), que estaban en Asia con el Presidente Kast. Ambos dicen que no los autorizaron, lo que derivó en acusaciones de falsificación de firmas. Espinoza dijo en X que la polémica es "incomprensible" y que hablará "con toda la verdad" ante la Fiscalía cuando lo citen.</p>
+      <p><b>Impacto.</b> Es una crisis de credibilidad del Senado, y es el tema de oficina del día. El artículo no precisa quién retiró los permisos ni en qué etapa está la investigación.</p>
+      <p><b>Lectura.</b> Hay que esperar la declaración ante Fiscalía. Por ahora lo que existe son las versiones de los senadores, no hechos probados.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/fidel-espinoza-ps-califica-de-incomprensible-polemica-por-firmas-y-llama-a-hablar-con-toda-la-verdad-ante-fiscalia/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+    <article class="nota" id="pol-bolivia">
+      <img src="https://www.latercera.com/resizer/v2/7JOLPKVZWVG6RFRRQCPTYFWJ54.jpeg?auth=c707094c1a8c25bd5db5533536bce7e69c1f1e932400db93114ef84abb686347&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Chile y Bolivia retoman consultas políticas, que no se hacían desde 2010</h3>
+      <p><b>Qué pasó.</b> Se realizó la 23.ª reunión del Mecanismo de Consultas Políticas, por mandato de Kast y Rodrigo Paz. Revisaron libre tránsito, oleoducto Sica Sica-Arica, interconexión eléctrica y la modernización del acuerdo comercial ACE 22. Próximas fechas: 11 de diciembre en La Paz y visita de Paz a Chile en el primer semestre de 2027.</p>
+      <p><b>Impacto.</b> Abre espacio a comercio, minería y energía con Bolivia, y a la normalización diplomática que ambos dicen buscar.</p>
+      <p><b>Lectura.</b> Según el comunicado conjunto, avanzarán "con gradualidad y pragmatismo". La lectura probable es que ambos gobiernos priorizan la agenda económica y dejan para después los temas históricos.</p>
+      <div class="fuente"><a href="https://www.latercera.com/politica/noticia/chile-y-bolivia-reactivan-mecanismo-de-consultas-politicas-tras-16-anos-y-apuntan-a-normalizar-relaciones-diplomaticas/" target="_blank" rel="noopener">La Tercera</a> y <a href="https://www.cooperativa.cl/noticias/pais/relaciones-exteriores/bolivia/chile-y-bolivia-reanudaron-mecanismo-de-consultas-politicas-que-no/2026-11-21/125638.html" target="_blank" rel="noopener">Cooperativa</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="ia">
+  <h2>IA</h2>
+  <div class="notas">
+    <article class="nota" id="ia-nvidia">
+      <img src="https://techcrunch.com/wp-content/uploads/2026/01/GettyImages-2256813240.jpg?resize=1200,800" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Nvidia dejará de vender el chip H200 en China y Huang sigue fuera de la empresa</h3>
+      <p><b>Qué pasó.</b> Colette Kress, a cargo de forma interina, anunció que Nvidia dejará de vender el H200 en China, tras restricciones más duras de la administración Trump. Jensen Huang ya no es CEO. Elon Musk y otros piden su regreso, y la empresa dice que no lo planea.</p>
+      <p><b>Impacto.</b> Nvidia es el termómetro de la inversión en IA: su salida de China y el vacío de mando mueven las expectativas del sector.</p>
+      <p><b>Lectura.</b> TechCrunch contrasta buenos resultados trimestrales con una acción en caída. La lectura probable es que el mercado descuenta el riesgo regulatorio y de gobierno corporativo más que el negocio.</p>
+      <div class="fuente"><a href="https://techcrunch.com/2026/11/21/a-tale-of-two-nvidias/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </article>
+    <article class="nota" id="ia-armas">
+      <span class="volanta">Mundo</span>
+      <h3>La ONU acuerda negociar normas para armas autónomas, pero sin compromiso de que sean vinculantes</h3>
+      <p><b>Qué pasó.</b> En Ginebra, los Estados de la Convención sobre Ciertas Armas Convencionales acordaron elaborar en dos años un instrumento sobre sistemas de armas letales autónomas. Unos 100 países pedían normas vinculantes a corto plazo. Rusia, EE.UU. e Israel se opusieron, y Rusia objetó además las reglas de procedimiento.</p>
+      <p><b>Impacto.</b> No hay regla internacional obligatoria para estas armas hasta al menos 2028. Para empresas de IA y defensa, el vacío significa que la regulación llegará después de la tecnología.</p>
+      <p><b>Lectura.</b> La lectura probable es que las potencias con ventaja tecnológica prefieren no atarse.</p>
+      <div class="fuente"><a href="https://www.cnbc.com/2026/11/21/countries-agree-to-un-talks-aiming-to-regulate-killer-robots-by-2028.html" target="_blank" rel="noopener">CNBC</a></div>
+    </article>
+    <article class="nota" id="ia-signal">
+      <img src="https://techcrunch.com/wp-content/uploads/2026/05/signal-app-icon-phone.jpg?resize=1200,800" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Signal restringe las capturas de pantalla en móviles por la IA integrada en los sistemas operativos</h3>
+      <p><b>Qué pasó.</b> Signal bloquea ahora por defecto las capturas de pantalla en sus apps de Android y iOS, como ya hacía en Windows. El usuario puede desactivarlo. Su presidenta, Meredith Whittaker, lo atribuye a una "amenaza existencial": los agentes de IA de Windows, Android y iOS pueden "escanear" lo que aparece en pantalla, fuera del control de la app.</p>
+      <p><b>Impacto.</b> Afecta a cualquiera que use mensajería con datos sensibles de negocio. Whittaker admite que la medida es incompleta.</p>
+      <p><b>Lectura.</b> Es una señal de que la privacidad ya no depende solo de la app sino del sistema operativo,.</p>
+      <div class="fuente"><a href="https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/" target="_blank" rel="noopener">TechCrunch</a></div>
+    </article>
+  </div>
+</section>
+
+<section class="seccion" id="mineria">
+  <h2>Minería</h2>
+  <div class="notas">
+    <article class="nota" id="min-codelco">
+      <img src="https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7026495-codelco-cerraria-2026-con-su-produccion-mas-baja-en-tres-decadas-pese-a-precios-historicos-del-cobre.jpg" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>Codelco cerraría 2026 con 1,2 millones de toneladas, su producción más baja en 31 años</h3>
+      <p><b>Qué pasó.</b> Según BioBioChile, con datos de Cochilco, Codelco produciría 1,2 millones de toneladas de cobre este año, el menor nivel desde 1995. Desde 2017 la caída es de unas 534 mil toneladas, unos US$7.240 millones a US$6,15 la libra, según Núcleo Minero.</p>
+      <p><b>Impacto.</b> Chile pierde ingresos justo cuando el cobre está caro, y la minería explica buena parte de la caída del PIB. Para quien vende servicios a la minería, significa menos faena.</p>
+      <p><b>Lectura.</b> La lectura probable es que el problema viene de gestión e inversiones atrasadas: Núcleo Minero habla de mala gestión, hay proyectos con retraso y se investiga una presunta inflación de cifras de producción en 2024 y 2025. El Gobierno estudia abrir el capital de Codelco a privados, lo que sus críticos llaman "privatización encubierta" y Fontaine niega.</p>
+      <div class="fuente"><a href="https://www.biobiochile.cl/noticias/economia/negocios-y-empresas/2026/11/20/codelco-cerraria-2026-con-su-produccion-mas-baja-en-tres-decadas-pese-a-precios-historicos-del-cobre.shtml" target="_blank" rel="noopener">BioBioChile</a></div>
+    </article>
+    <article class="nota" id="min-china">
+      <img src="https://media.biobiochile.cl/wp-content/uploads/2026/11/social-7027658-codelco-2-1200x633.png" alt="" onerror="this.remove()">
+      <span class="volanta">Mundo</span>
+      <h3>Codelco ofrece a privados en China cerca de un millón de hectáreas mineras</h3>
+      <p><b>Qué pasó.</b> Fontaine anunció en la Asia Copper Week de Shanghái que Codelco busca socios privados para una cartera inicial de 60 propiedades con distinto grado de exploración, cerca de un millón de hectáreas. La estatal tiene deuda sobre US$27 mil millones.</p>
+      <p><b>Impacto.</b> Hay una puerta nueva para exploración y servicios. En el Congreso, Cristián Tapia (PPD) apoya las alianzas pero exige control estatal mayoritario; Daniel Valenzuela pide más capital privado y recuerda que casi US$1.000 millones se van en intereses.</p>
+      <p><b>Lectura.</b> La lectura probable es que Codelco no puede seguir endeudándose y usa socios para financiar exploración sin más deuda. Queda por definir cómo se reparten riesgos y control.</p>
+      <div class="fuente"><a href="https://www.biobiochile.cl/noticias/economia/actualidad-economica/2026/11/21/codelco-abre-un-millon-de-hectareas-a-privados-en-china-congreso-exige-resguardo-del-control-estatal.shtml" target="_blank" rel="noopener">BioBioChile</a></div>
+    </article>
+    <article class="nota" id="min-pib">
+      <img src="https://www.latercera.com/resizer/v2/KMLJZTMB5FFUNKCPZQMD4FYT5U.jpg?auth=4d1a8c20a10d8c15b71260ee5c728defa51076b0823d2c141088bd27bb9787e4&smart=true&width=900" alt="" onerror="this.remove()">
+      <span class="volanta">Chile</span>
+      <h3>La minería le resta entre 1 y 1,6 puntos al PIB: economistas discrepan en cuánto</h3>
+      <p><b>Qué pasó.</b> La actividad cayó 0,5% entre enero y septiembre y 1,1% en el tercer trimestre. La minería bajó 14,7% en el tercero. Hacienda calcula un lastre de 1,6% del PIB. Sebastián Claro estima 1,1 puntos, José de Gregorio cerca de 1 punto.</p>
+      <p><b>Impacto.</b> Sin la caída minera, la economía crecería entre 0,6% y 1%, según los cálculos.</p>
+      <p><b>Lectura.</b> Hay dos explicaciones en disputa. De Gregorio atribuye la caída sobre todo a la ley del mineral. Budnevich apunta a incertidumbre tributaria y regulatoria y a demoras en permisos.</p>
+      <div class="fuente"><a href="https://www.latercera.com/pulso/noticia/el-debate-sobre-el-peso-de-la-caida-de-la-mineria-en-el-ciclo-contractivo-de-la-economia-chilena/" target="_blank" rel="noopener">La Tercera</a></div>
+    </article>
+  </div>
+</section>
+
+</div>
+</body>
+</html>
